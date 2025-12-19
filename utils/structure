@@ -1,0 +1,82 @@
+.
+|-- bin
+|   |-- www
+|-- config
+|   |-- keys.js
+|-- src
+|   |-- api
+|   |   |-- v1.0
+|   |   |   |-- coins.js
+|   |   |   |-- home.js
+|   |   |   |-- index.js
+|   |   |   |-- more.js
+|   |   |   |-- my_games.js
+|   |   |   |-- redemption.js
+|   |   |   |-- referral.js
+|   |   |   |-- settings.js
+|   |   |   |-- slack_notifications.js
+|   |   |   |-- start_battle.js
+|   |   |   |-- user_details.js
+|   |   |   |-- user_vote.js
+|   |   |   |-- watch_ads.js
+|   |   |-- v1.1
+|   |   |   |-- questions.js
+|   |-- Auth
+|   |   |-- v1.0
+|   |   |   |-- login.js
+|   |   |   |-- logout.js
+|   |   |   |-- register.js
+|   |   |-- activity_middleware.js
+|   |   |-- api_key_auth.js
+|   |   |-- auth.js
+|   |   |-- sns.js
+|   |   |-- start_battle_auth.js
+|   |   |-- user_otp.js
+|   |   |-- vote_middleware.js
+|   |-- db
+|   |   |-- modules
+|   |   |   |-- referral.js
+|   |   |   |-- report_battle.js
+|   |   |   |-- user_battles.js
+|   |   |   |-- user_coins_history.js
+|   |   |   |-- voters.js
+|   |   |-- index.js
+|   |-- models
+|   |   |-- activity.js
+|   |   |-- coins.js
+|   |   |-- home.js
+|   |   |-- index.js
+|   |   |-- league.js
+|   |   |-- more.js
+|   |   |-- my_games.js
+|   |   |-- redemption.js
+|   |   |-- refresh_token.js
+|   |   |-- response.js
+|   |   |-- search.js
+|   |   |-- slack_notifications.js
+|   |   |-- slack_templets.js
+|   |   |-- start_battle.js
+|   |   |-- token.js
+|   |   |-- tracker.js
+|   |   |-- user_details.js
+|   |   |-- user_vote.js
+|   |-- s3
+|   |   |-- pre_signed_url_generator.js
+|   |-- start_battle
+|   |   |-- battle_result.js
+|   |   |-- index.js
+|   |   |-- save_battle.js
+|   |-- validations
+|   |   |-- index.js
+|   |-- index.js
+|-- utils
+|   |-- evn_docs.js
+|   |-- structure
+|-- gitignore.js
+|-- app.js
+|-- lambda.js
+|-- package-lock.js
+|-- package.json
+|-- README.md
+|-- serverless.yml
+|-- webpack.config.js

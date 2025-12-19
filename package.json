@@ -1,0 +1,45 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
+    "start": "node ./bin/www",
+    "deploy": "serverless deploy"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1546.0",
+    "aws-serverless-express": "^3.4.0",
+    "axios": "^1.6.7",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "firebase": "^10.8.0",
+    "googleapis": "^133.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^6.0.11",
+    "morgan": "^1.10.0",
+    "node-cache": "^5.1.2",
+    "node-cron": "^3.0.3",
+    "node-schedule": "^2.1.1",
+    "random-indian-name": "^1.0.0",
+    "redis": "^4.6.15",
+    "request": "^2.88.2",
+    "request-ip": "^3.3.0",
+    "serverless": "^4.4.13",
+    "serverless-http": "^3.2.0",
+    "serverless-offline": "^14.3.3",
+    "uuid": "^9.0.1",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "serverless-dotenv-plugin": "^5.0.0",
+    "serverless-webpack": "^5.15.0",
+    "webpack": "^5.96.1",
+    "webpack-node-externals": "^3.0.0"
+  }
+}

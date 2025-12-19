@@ -1,0 +1,33 @@
+service: tt-apis
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  stage: production
+  region: ap-south-1
+  memorySize: 2048
+  timeout: 15
+
+functions:
+ api:
+   handler: lambda.handler
+   events:
+     - http: ANY {proxy+}
+     - http: ANY /
+
+plugins:
+  - serverless-offline
+  - serverless-dotenv-plugin
+  - serverless-webpack
+
+package:
+  individually: true
+  include:
+    - config/*.txt
+    - config/*.json
+
+custom:
+  webpack:
+    webpackConfig: './webpack.config.js'
+    includeModules: true
+  esbuild: false
